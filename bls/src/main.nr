@@ -1,23 +1,14 @@
-use dep::std;
+// use dep::std;
 
-mod Bls{
-    fn test() {
-        let x = 1;
-        let y = 2;
-        assert(x != y);
+mod bls {
+    
+    use dep::noir_bigint::{BigUint56};
+    use dep::std::println;
+
+    fn verify_signature(pubkey : BigUint56, msg : BigUint56, sig : BigUint56) -> bool {
+        println("verify_signature");
+        return true;
     }
-}
 
-fn main(x : Field, y : pub Field) {
-    Bls::test();
-    std::println(x);
-    assert(x != y);
-}
-
-#[test]
-fn test_main() {
-    main(1, 2);
-
-    // Uncomment to make test fail
-    // main(1, 1);
+ 
 }
