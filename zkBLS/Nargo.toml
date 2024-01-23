@@ -1,0 +1,10 @@
+[package]
+name = "zkBLS"
+type = "bin"
+authors = [""]
+compiler_version = ">=0.21.0"
+
+[dependencies]
+noir_bigint_curves = { tag = "v0.2.0", git = "https://github.com/shuklaayush/noir-bigint", directory="crates/curves" }
+noir_biguint = { tag = "v0.2.0", git = "https://github.com/shuklaayush/noir-bigint", directory="crates/biguint" }
+noir_bigint_primefield = { tag = "v0.2.0", git = "https://github.com/shuklaayush/noir-bigint", directory="crates/primefield" }
